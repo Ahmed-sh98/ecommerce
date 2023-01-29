@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السادسة</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="custom">
+    <section id="checkout">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="content-checkout">
+              <div class="header">
+                <img src="img/ahmed.jpg" alt="logo" class="logo" />
+                <div class="user">
+                  <p>أهلا بك Ahmed Salem</p>
+                  <div class="page-title">
+                    <span>ثمرة</span>
+                    <span>/</span>
+
+                    <span>سلة المشتريات</span>
+                    <span>/</span>
+                    <span>انهاء الطلب</span>
+                    <div class="line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step1">
+                <span>1</span>
+                <img src="img/icon/bus.png" alt="" />
+                <span>الشحن والتوصيل</span>
+                <div class="line"></div>
+              </div>
+              <div class="form-checkout">
+                <p class="pt-2">عنوان التوصيل</p>
+                <form action="" class="from-control">
+                  <div class="row">
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="country">أختر الدولة</label>
+                      <select name="country" id="country" class="form-control">
+                        <option value="country">فلسطين</option>
+                        <option value="country">السعودية</option>
+                        <option value="country">مصر</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="country">أختر المدينة</label>
+                      <select name="country" id="country" class="form-control">
+                        <option value="country" selected disabled hidden>
+                          غزة
+                        </option>
+                        <option value="country">رفح</option>
+                        <option value="country">جباليا</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="country"> الحي</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="اسم الحي"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="country">الشارع </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="اسم الشارع"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="country">وصف البيت</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=" وصف البيت"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 mb-2">
+                      <label for="country"> الرمز البريدي</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="الرمز البريدي"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="flexSwitchCheckReverse"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="flexSwitchCheckReverse"
+                        >
+                          اختر شركة الشحن</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="note">
+                    <p>
+                      الرجاء تحديد العنوان لعرض خيارات الشحن و التوصيل المتوفرة
+                      لك
+                    </p>
+                  </div>
+                  <div class="step2">
+                    <span>2</span>
+                    <img src="img/icon/layer.png" alt="" />
+                    <span>طريقة الدفع</span>
+                    <div class="line"></div>
+                  </div>
+
+                  <div class="payment-checkout">
+                    <div class="row">
+                      <div class="d-flex flex-wrap w-100">
+                        <div class="col-12 col-md-4 mb-3">
+                          <div class="content-pay">
+                           
+                            <input
+                              type="radio"
+                              id="myCheck"
+                              onclick="mada()"
+                              name="radio"
+
+                            />
+                             <label for="myCheck" name="radio">
+                              <img src="img/pay1.png" alt="pay1" />
+                              <span><i class="fa-solid fa-check"></i></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                          <div class="content-pay">
+                            <input
+                              type="radio"
+                              id="visaCheck"
+                              name="radio"
+                              onclick="visa()"
+                            />
+
+                            <label for="visaCheck" name="radio">
+                              <img src="img/pay2.png" alt="visaCheck" />
+                              <span><i class="fa-solid fa-check"></i></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                          <div class="content-pay">
+                            <input
+                              type="radio"
+                              id="stc"
+                              name="radio"
+                              onclick="stcCheck()"
+                            />
+
+                            <label for="stc" name="radio">
+                              <img src="img/pay3.png" alt="stcCheck" />
+                              <span><i class="fa-solid fa-check"></i></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                          <div class="content-pay">
+                            <input
+                              type="radio"
+                              id="bank"
+                              name="radio"
+                              onclick="bankCheck()"
+                            />
+
+                            <label for="bank" name="radio">
+                              <img src="img/pay4.png" alt="bankCheck" />
+                              <span><i class="fa-solid fa-check"></i></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                          <div class="content-pay">
+                            <input
+                              type="radio"
+                              id="pay"
+                              name="radio"
+                              onclick="payCheck()"
+                            />
+
+                            <label for="pay" name="radio">
+                              <img src="img/pay5.png" alt="bankCheck" />
+                              <span><i class="fa-solid fa-check"></i></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                          <div class="content-pay">
+                            <input
+                              type="radio"
+                              id="push"
+                              name="radio"
+                              onclick="pushCheck()"
+                            />
+                            <label for="push" name="radio">
+                              <img src="img/pay6.png" alt="pushCheck" />
+                              <span><i class="fa-solid fa-check"></i></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="checkout-mada">
+                <form action="" id="text">
+                  <div class="row">
+                    <div class="mada">
+                      <div class="col-12 col-md-6">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="رقم البطاقة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          type="text"
+                          name="date"
+                          id="date"
+                          class="form-control"
+                          placeholder="الشهر / السنة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder=" Cvv"
+                        />
+                      </div>
+                      <button class="btn-check2">اكمال الدفع</button>
+                    </div>
+                  </div>
+                </form>
+                <form action="" id="visa">
+                  <div class="row">
+                    <div class="mada">
+                      <div class="col-12 col-md-6">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="رقم البطاقة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          type="text"
+                          name="date"
+                          id="date"
+                          class="form-control"
+                          placeholder="الشهر / السنة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder=" Cvv"
+                        />
+                      </div>
+                      <button class="btn-check2">اكمال الدفع</button>
+                    </div>
+                  </div>
+                </form>
+                <form action="" id="stcForm">
+                  <div class="row">
+                    <div class="mada">
+                      <div class="col-12 col-md-6">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="رقم الجوال الخاص بالمحفظة"
+                        />
+                      </div>
+  
+                      <button class="btn-check2">اكمال الدفع</button>
+                    </div>
+                  </div>
+                </form>
+  
+                <form action="" id="bankForm">
+                  <div class="row">
+                   <div class="bank-form ">
+                    <div class="bank">
+                      <div class="col-12 col-md-10">
+                       <div class="bankForm">
+                        <img src="img/bank.png" alt="">
+                        <div class="userName">
+                          <p>
+                            صاحب الحساب
+                            <span class="email"
+                              >مؤسسة ثمرة للتسويق الالكتروني</span
+                            ></p>
+                            <div class="name-account">
+                            <p>رقم الحساب <span>05999999999</span></p>
+                            <p>رقم الأيبان <span>SA7210000000140000583837001</span></p>
+                            </div>
+                            
+                            
+                        </div>
+  
+                       </div>
+                      </div>
+                  </div>
+                    <div class="bank">
+                      <div class="col-12 col-md-10">
+                       <div class="bankForm ">
+                        <img src="img/fast.png" alt="">
+                        <div class="userName">
+                          <p>
+                            معلومات التحويل الفوري (السريع)
+                            </p>
+                            <div class="name-account">
+                            <p class="name-c">  المعرف البديل - رقم الجوال  0594030716 <span>05999999999</span></p>
+                            </div>
+                            
+  
+                        </div>
+  
+                       </div>
+  
+                      </div>
+                   
+                  </div>
+                  <button class="file">
+                    <input type="file" name="file" id="file" class="input-file" id="file" />
+                    <span><img src="img/icon/file.png" alt=""></span>
+                    <label for="file">الرجاء ارفاق صورة الايصال</label>
+                  </button>
+                  <div>
+                    <input type="email" name="email" id="email" placeholder="الحساب الذي تم التحويل منه" class="input-account"/>
+                  </div>
+                  <button class="btn-check2">اكمال الدفع</button>
+  
+                   </div>
+                   
+  
+                </form>
+                <form action="" id="payForm">
+                  <div class="row">
+                    <div class="mada">
+                      <div class="col-12 col-md-6">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="رقم البطاقة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          type="text"
+                          name="date"
+                          id="date"
+                          class="form-control"
+                          placeholder="الشهر / السنة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder=" Cvv"
+                        />
+                      </div>
+                      
+                      <button class="btn-check2">اكمال الدفع</button>
+                    </div>
+                  </div>
+                </form>
+                <form action="" id="pushForm">
+                  <div class="row">
+                    <div class="mada">
+                      <div class="col-12 col-md-6">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="رقم البطاقة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          type="text"
+                          name="date"
+                          id="date"
+                          class="form-control"
+                          placeholder="الشهر / السنة"
+                        />
+                      </div>
+                      <div class="col-12 col-md-3">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder=" Cvv"
+                        />
+                      </div>
+                      stcCheck
+                      <button class="btn-check2">اكمال الدفع</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+         
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="content-checkout">
+            <div class="summary">
+              <div class="cart-summary mb-2">
+                <p>ملخص السلة</p>
+                <span>200 ر.س</span>
+              </div>
+              <div class="cart-summary">
+                <p>اجمالي الطلب</p>
+                <span class="">200 ر.س</span>
+              </div>
+              <div class="cart-summary">
+                <a href="#" class="">
+                  <img src="img/icon/copon (3).png" alt="coupon" />
+                  هل لديك كوبون خصم ؟
+                </a>
+              </div>
+              <div class="cart-summary">
+                <button type="submit">
+                  <a href="thanks-shop.html" class="c-white">اكمال الدفع</a
+                  ><i class="fa-solid fa-arrow-left"></i>
+                </button>
+              </div>
+            </div>
+          
+          </div>
+         
+       
+        </div>
+      </div>
+    </section>
+      <!-- Mobile Component  -->
+      <div class="block-mobile">
+        <div>
+          <button href="index.html">
+            <img src="img/icon/home.png" alt="home" />
+          </button>
+          <p>الرئيسية</p>
+        </div>
+        <div>
+          <button class="category-nav">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <p>فئات المنتجات</p>
+        </div>
+        <div>
+          <button class="login"><i class="fa-regular fa-user"></i></button>
+          <p>تسجيل الدخول</p>
+        </div>
+      </div>
+      <div class="mobile-category">
+        <ul class="menu-category " id="menu_category">
+          <div class="category-ul">
+            <li class="list-product"><a href="#">فئات المنتجات</a></li>
+            <button class="close-list"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <li class="list-ul"><button>جميع التصنيفات</button></li>
+          <li><a href="#">بقالة</a></li>
+          <li><a href="#freezer">المجمدات</a></li>
+          <li><a href="#drinks">المشروبات والعصائر</a></li>
+          <li><a href="#">المكملات الغذائية</a></li>
+          <li><a href="#vegitables">خضروات وفواكه</a></li>
+          <li><a href="#chese">أجبان</a></li>
+        </ul>
+      </div>
+      <div class="login-mobile">
+        <button class="close-login"><i class="fa-solid fa-xmark"></i></button>
+  
+        <div class="input-mobile">
+          <div class="img-login">
+            <img src="img/icon/login.png" alt="" />
+          </div>
+          <p>تسجيل الدخول</p>
+  
+          <form action="">
+            <label for="email" class="email">البريد الإلكتروني</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="أدخل عنوان بريدك الإلكتروني"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- Mobile Component  -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
