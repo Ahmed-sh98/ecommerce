@@ -173,8 +173,6 @@ a {
   transition: 0.3s;
 }
 
-
- 
 /*  */
 
 /*  */
@@ -776,7 +774,7 @@ li.list-ul {
 
 .product img {
   height: 250px;
-  width:100%
+  width: 100%;
 }
 /* Start Page Three */
 .box-cart {
@@ -1221,9 +1219,7 @@ input[type="radio"] {
   padding-top: 10px 0;
   border: none;
   background-color: var(--secondary-color);
-
 }
- 
 
 /* End page 7  */
 
@@ -1243,17 +1239,15 @@ input[type="radio"] {
   align-items: center;
   position: relative;
 }
-.numOne{
-  
+.numOne {
   position: absolute;
   left: 65%;
 }
-.numOne{
-  
+.numOne {
   position: absolute;
   left: 65%;
 }
-.price-total{
+.price-total {
   position: absolute;
   left: 30%;
 }
@@ -1331,8 +1325,7 @@ input[type="radio"] {
   align-items: center;
   gap: 10px;
 }
-.sum{
-
+.sum {
 }
 .sum ul {
   list-style: none;
@@ -1342,7 +1335,6 @@ input[type="radio"] {
   align-items: center;
   text-align: center;
   border-bottom: 1px solid var(--secondary-color);
-  
 }
 
 .content-requests1 .close button {
@@ -1741,6 +1733,7 @@ footer div ul li {
 @media (max-width: 576px) {
   header {
     padding: 20px;
+    position: relative;
   }
   .search-nav {
     position: relative;
@@ -1751,18 +1744,152 @@ footer div ul li {
     left: 0;
     top: 100%;
   }
-  .carousel-indicators [data-bs-target] {
-    background-color: #242424;
-  }
+
   .carousel-indicators {
     transform: rotate(90deg);
+    position: absolute;
     left: -86%;
-    bottom: 75%;
+    bottom: 90%;
   }
   .row {
     margin: 0;
     padding: 0;
   }
+
+  .display-more {
+    display: block;
+    transition: 3s;
+    width: 50%;
+    transform: translateX(-10);
+  }
+
+  .noteMore .logo-note {
+    transform: translateX(-0);
+    width: 219px;
+    border-radius: 8px;
+    position: absolute;
+    top: -10px;
+
+    left: 17px;
+    z-index: 999;
+    transition: 3s;
+    text-align: justify;
+    padding: 20px;
+    background-color: #fff;
+    height: 90vh;
+  }
+  .noteMore .icon-note {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  button.iconMore > i {
+    cursor: pointer;
+  }
+  .close-note {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #fff;
+    border: 0;
+  }
+  .iconMore {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: -35px;
+    font-size: 22px;
+    border: none;
+    width: 30px;
+    border: none;
+  }
+}
+
+.noteMore {
+  display: none;
+}
+@media (max-width:768px){
+  .display-more {
+    display: block;
+    transition: 3s;
+    width: 50%;
+    transform: translateX(-10);
+  }
+
+  .noteMore .logo-note {
+    transform: translateX(-0);
+    width: 219px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 17px;
+    z-index: 999;
+    transition: 3s;
+    text-align: justify;
+    padding: 20px;
+    background-color: #fff;
+    height: 90vh;
+  }
+  .noteMore .icon-note {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  button.iconMore > i {
+    cursor: pointer;
+  }
+  .close-note {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #fff;
+    border: 0;
+  }
+  .iconMore {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    position: absolute;
+    top: -10px;
+
+    left: -35px;
+    font-size: 22px;
+    border: none;
+    width: 30px;
+    border: none;
+  }
+
+}
+
+.noteMore {
+  display: none;
+}
+ 
+.noteMore .logo-note img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.display-more {
+  display: block;
+  transition: 3s;
+  width: 40%;
+}
+.noteMore .logo-note {
+  transform: 3s ease;
 }
 
 @media (min-width: 992px) {
@@ -1783,7 +1910,35 @@ footer div ul li {
     flex: 0 0 auto;
     width: 11.666667%;
   }
+
+  .carousel-indicators {
+    transform: rotate(90deg);
+    left: -86%;
+    bottom: 70%;
+  }
+
+  .display-more {
+    display: none;
+  }
+  .iconMore {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    position: absolute;
+    top: -10px;
+    left: -35px;
+    font-size: 22px;
+    border: none;
+    width: 30px;
+    border: none;
+  }
+   
 }
+
+/*  */
+
+/*  */
 .row {
   margin: 0;
   padding: 0;
