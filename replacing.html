@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>العشرون</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="body-condition">
+    <header>
+      <div class="container">
+        <div class="top-nav d-none d-md-block">
+          <div class="d-flex justify-content-between">
+            <div class="info-nav d-flex pt-4">
+              <div class="email me-4">
+                <span class="me-2">
+                  <i class="fa-regular fa-envelope"></i
+                ></span>
+                <a href="mailto:a4medsalem.98@gmail.com" class="info-text me-2">
+                  a4medsalem.98@gmail.com
+                </a>
+              </div>
+              <div class="phone me-4">
+                <span class="me-2"><i class="fa-solid fa-phone"></i></span>
+                <a href="tel:+970594030716" class="info-text">
+                  970594030716+
+                </a>
+              </div>
+            </div>
+            <div class="info-nav">
+              <div class="content-info">
+                <img src="img/ahmed.jpg" alt=""  class="ahmed" />
+                <p>Ahmed Salem</p>
+                <button class="btnArrow"><img src="img/icon/arrow.png" alt="" /></button>
+              </div>
+              <!--  -->
+              <div class="content-login">
+                <ul class="listNotify">
+                  <li>
+                    <a href="notification-empty.html">
+                      <span><img src="img/icon/Vector (5).png" alt="" /></span
+                      >الاشعارات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="list-request.html"
+                      ><span><img src="img/icon/Vector (6).png" alt="" /></span
+                      >الطلبات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="requests-total.html">
+                      <span><img src="img/icon/Vector (7).png" alt="" /></span>
+                      طلبات بانتظار الدفع
+                    </a>
+                  </li>
+                  <li>
+                    <a href="rating.html"
+                      ><span><img src="img/icon/Vector (9).png" alt="" /></span>
+                      نقييم المتجر والمنتجات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="home-login.html">
+                      <span
+                        ><img src="img/icon/Vector (2).png" alt="account"
+                      /></span>
+                      حسابي</a
+                    >
+                  </li>
+                  <li>
+                    <a href="index.html">
+                      <span
+                        ><img src="img/icon/Vector (4).png" alt="signOut"
+                      /></span>
+                      تسجيل خروج</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="search-nav">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a href="#" class="logo">
+                <img src="img/logo/logo.jpeg" alt="logo" />
+              </a>
+            </div>
+            <div class="flex-grow-1 px-0 px-md-4 d-none d-md-block form-search">
+              <form action="">
+                <div class="input-form">
+                  <input
+                    type="search"
+                    class="w-100"
+                    placeholder="ابحث عن منتجك"
+                  />
+                  <button type="submit" class="submit">بحث</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="d-flex icon-basket">
+              <a href="#" class=""><i class="fa-regular fa-heart"></i></a>
+
+              <div class="ps-3 icon-shop">
+                <div>
+                  <a href="#" class="bag-shop"
+                    ><i class="fa-solid fa-bag-shopping"></i
+                  ></a>
+                  <span class="number-shop">2</span>
+                  <span class="price">25 ر.س</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="container">
+          <ul class="d-flex align-items-center justify-content-between">
+            <li>
+              <button>
+                <select name="all_category" id="all_category" class="btn-ul">
+                  <option selected>جميع التصنيفات</option>
+                  <option value="lest-vegetable">خضروات</option>
+                  <option value="drinks">مشروبات</option>
+                  <option value="cleaning">منظفات</option>
+                  <option value="Freezers">مجمدات</option>
+                </select>
+              </button>
+            </li>
+            <li>
+              <button>
+                <select name="category" id="category" class="list-grocery">
+                  <option selected>بقالة</option>
+                  <option value="cleaning">خضروات</option>
+                  <option value="cleaning">مشروبات</option>
+                  <option value="cleaning">منظفات</option>
+                  <option value="Freezers">مجمدات</option>
+                </select>
+              </button>
+            </li>
+            <li><a href="#">المجمدات</a></li>
+            <li><a href="#">المشروبات والعصائر </a></li>
+            <li><a href="#">المكملات الغذائبة وتقوية المناعة</a></li>
+            <li><a href="#">الافطار والسناك والبذور</a></li>
+            <li><a href="#">الأجبان والحليب والبيض</a></li>
+            <li><a href="#">المنظفات المنزلية</a></li>
+            <li><a href="#">طعام الأطفال</a></li>
+            <li><a href="#">خضروات والقواكه العضوية</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--  -->
+    <div class="page-title">
+      <div class="container">
+        <div class="content-header">
+          <a href="index.html"><img src="img/icon/home.png" alt="home" /></a>
+          <span class="">/</span>
+          <span class="">الشروط ولاأحكام</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="conditions">
+      <div class="container custom-container">
+        <div class="text-conditions">
+          <h5>سياسة الاستبدال والارجاع</h5>
+
+        <div class="mt-4">
+            <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+                من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا
+                كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص
+                العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير
+                من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.هذا النص هو مثال
+                لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج
+                إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+                كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من
+                الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+              </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-12 col-md-3">
+                        <img src="img/logo/logo.jpeg" alt="" class="logo" />
+
+            <p class="describe">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد لقد تم توليد هذا
+              النص من مولد النص العربى، حيث يمكنك أن تولد
+            </p>
+            <div class="icon-footer">
+              <a href=""> <i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <p class="header-links">بقالة</p>
+            <ul class="p-0">
+              <li><a href="#">بهارات وتوابل</a></li>
+              <li><a href="#"> الزيوت</a></li>
+              <li><a href="#"> الأرز والمكرونة والدقيق</a></li>
+              <li><a href="#"> المعلبات</a></li>
+              <li><a href="#"> القهوة والشاي</a></li>
+              <li><a href="#"> العسل </a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <p class="header-links">روابط سريعة</p>
+            <ul class="p-0">
+              <li><a href="replacing.html"> سياسة الاستبدال والارجاع</a></li>
+              <li><a href="privacy.html"> سياسة الخصوصية</a></li>
+              <li><a href="conditions.html"> الشروط والأحكام</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <p class="header-links">تواصل معنا</p>
+            <ul class="p-0">
+              <div class="email">
+                <span class="me-2">
+                  <i class="fa-regular fa-envelope"></i
+                ></span>
+                <a href="mailto:a4medsalem.98@gmail.com" class="info-text me-2">
+                  a4medsalem.98@gmail.com
+                </a>
+              </div>
+              <div class="phone me-4">
+                <span class="me-2"><i class="fa-solid fa-phone"></i></span>
+                <a href="tel:+970594030716" class="info-text">
+                  970594030716+
+                </a>
+              </div>
+            </ul>
+            <div class="icon-footer">
+              <img src="img/icon/Mask Group 6 1.png" alt="Mask" />
+              <img src="img/icon/Visa-Logo 1.png" alt="Visa" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Mobile Component  -->
+    <div class="block-mobile">
+      <div>
+        <button href="index.html">
+          <img src="img/icon/home.png" alt="home" />
+        </button>
+        <p>الرئيسية</p>
+      </div>
+      <div>
+        <button class="category-nav">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <p>فئات المنتجات</p>
+      </div>
+      <div>
+        <button class="login"><i class="fa-regular fa-user"></i></button>
+        <p>تسجيل الدخول</p>
+      </div>
+    </div>
+    <div class="mobile-category">
+      <ul class="menu-category " id="menu_category">
+        <div class="category-ul">
+          <li class="list-product"><a href="#">فئات المنتجات</a></li>
+          <button class="close-list"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <li class="list-ul"><button>جميع التصنيفات</button></li>
+        <li><a href="#">بقالة</a></li>
+        <li><a href="#freezer">المجمدات</a></li>
+        <li><a href="#drinks">المشروبات والعصائر</a></li>
+        <li><a href="#">المكملات الغذائية</a></li>
+        <li><a href="#vegitables">خضروات وفواكه</a></li>
+        <li><a href="#chese">أجبان</a></li>
+      </ul>
+    </div>
+    <div class="login-mobile">
+      <button class="close-login"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="input-mobile">
+        <div class="img-login">
+          <img src="img/icon/login.png" alt="" />
+        </div>
+        <p>تسجيل الدخول</p>
+
+        <form action="">
+          <label for="email" class="email">البريد الإلكتروني</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="أدخل عنوان بريدك الإلكتروني"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- Mobile Component  -->
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
